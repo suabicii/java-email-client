@@ -5,5 +5,5 @@ module JavaFXEmailClient {
     requires javafx.web;
 
     opens com.potato;
-    opens com.potato.view;
+    opens com.potato.controller;
 }

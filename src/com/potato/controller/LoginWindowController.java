@@ -1,4 +1,4 @@
-package com.potato.view;
+package com.potato.controller;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
