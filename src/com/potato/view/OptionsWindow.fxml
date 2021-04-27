@@ -9,8 +9,8 @@
       <ChoiceBox fx:id="themePicker" layoutX="165.0" layoutY="145.0" prefHeight="28.0" prefWidth="289.0" />
       <Label layoutX="52.0" layoutY="109.0" prefHeight="18.0" prefWidth="69.0" text="Font size" />
       <Label layoutX="52.0" layoutY="150.0" prefHeight="18.0" prefWidth="88.0" text="Color theme:" />
-      <Label layoutX="160.0" layoutY="14.0" prefHeight="18.0" prefWidth="289.0" text="Options" />
-      <Button layoutX="329.0" layoutY="298.0" mnemonicParsing="false" text="Cancel" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="160.0" layoutY="14.0" prefHeight="18.0" prefWidth="289.0" styleClass="big" text="Options" />
+      <Button layoutX="329.0" layoutY="298.0" mnemonicParsing="false" onAction="#cancelButtonAction" text="Cancel" />
       <Button layoutX="423.0" layoutY="298.0" mnemonicParsing="false" onAction="#applyButtonAction" text="Apply" />
    </children>
 </AnchorPane>
