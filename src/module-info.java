@@ -8,4 +8,5 @@ module JavaFXEmailClient {
 
     opens com.potato;
     opens com.potato.controller;
+    opens com.potato.model;
 }

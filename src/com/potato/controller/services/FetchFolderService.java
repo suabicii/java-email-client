@@ -36,7 +36,7 @@ public class FetchFolderService extends Service<Void> {
     private void handleFolders(Folder[] folders, EmailTreeItem<String> foldersRoot) throws MessagingException {
         for(Folder folder: folders) {
             EmailTreeItem<String> emailTreeItem = new EmailTreeItem<>(folder.getName());
-            foldersRoot.getChildren().add(emailTreeItem);
+            foldersRoot.getChildren().add((emailTreeItem));
             foldersRoot.setExpanded(true);
             fetchMessagesFolder(folder, emailTreeItem);
             if (folder.getType() == Folder.HOLDS_FOLDERS) {
@@ -57,7 +57,7 @@ public class FetchFolderService extends Service<Void> {
                             folder.open(Folder.READ_WRITE);
                             int folderSize = folder.getMessageCount();
                             for (int i = folderSize; i > 0; i--) {
-                                System.out.println(folder.getMessage(i).getSubject());
+                                emailTreeItem.addEmail(folder.getMessage(i));
                             }
                         }
                         return null;
